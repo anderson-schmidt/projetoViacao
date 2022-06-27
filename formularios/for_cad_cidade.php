@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../estilos/vm31.css">
     <title>Viação M31</title>
 </head>
 <body>
     <form method="POST" action="../controles/cad_cidade.php">
         <h1>Cadastro de cidade</h1>
-        <label>Nome do Cidade</label>
-        <input type="text" name="cidade">
-        <br><br><input type="submit" value="Cadastrar">
+        <div class="flex-container">
+            <div id="box">
+                <table>
+                    <tr>
+                        <td>
+                        <label>Nome do Cidade</label>
+                        </td>
+                        <td>
+                        <input type="text" name="cidade">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <td>
+                        <input type="submit" value="Cadastrar">
+                            </td>
+                            <td>
+                                <input type="button" value="Voltar" onclick="history.go(-1)">
+                            </td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </form>
 </body>
 
